@@ -1,7 +1,7 @@
 // initial call to API
 function grabWeatherData() {
     const city = document.querySelector('input').value
-    return fetch(`https://goweather.herokuapp.com/weather/${city}`).then(res => res.json()).then(data => console.log(data));
+    return fetch(`https://goweather.herokuapp.com/weather/${city}`).then(res => res.json()).then(data => renderWeatherCard(data));
 };
 
 // event listener for the click to submit
@@ -13,3 +13,6 @@ function lookUpWeather () {
     });
 };
 lookUpWeather();
+
+function renderWeatherCard(weather) {
+};
