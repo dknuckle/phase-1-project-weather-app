@@ -1,43 +1,45 @@
 // initial call to API
-function grabWeatherData() {
-    const city = document.querySelector('input').value;
+function grabWeatherData(city) {
     return fetch(`https://goweather.herokuapp.com/weather/${city}`)
-        .then(res => {
+      .then(res => {
         if (!res.ok) {
-            throw new Error('Failed to fetch weather data');
+          throw new Error('Failed to fetch weather data');
         }
         return res.json();
-        })
-        .then(weatherData => {
-            console.log(weatherData); // Log the API response data
-            renderWeatherCard(weatherData);
-            return weatherData; // Optional: Return the data for further processing
-          })
-        .catch(error => {
+      })
+      .then(weatherData => {
+        console.log(weatherData); // Log the API response data
+        renderWeatherCard(weatherData);
+        return weatherData; // Optional: Return the data for further processing
+      })
+      .catch(error => {
         // Handle the error
         console.error(error);
-        });
-    }
-      
-
-// event listener for the click to submit
-function lookUpWeather() {
+      });
+  }
+  
+  // event listener for the click to submit
+  function lookUpWeather() {
     const submit = document.querySelector("form");
     submit.addEventListener('submit', function(e) {
       e.preventDefault();
-      grabWeatherData();
+      const city = document.querySelector('input').value;
+      grabWeatherData(city);
     });
   }
   
   lookUpWeather();
+  
+  const weatherContainer = document.querySelector('#weather');
+  const card = document.createElement('li');
+  card.classList.add('card');
+  weatherContainer.appendChild(card);
+  
   function renderWeatherCard(weather) {
     if (!weather || !weather.temperature || !weather.wind || !weather.description || !weather.forecast || !Array.isArray(weather.forecast)) {
       console.error('Invalid weather data:', weather);
       return;
     }
-  
-    const card = document.createElement('li');
-    card.classList.add('card');
   
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('content');
@@ -46,7 +48,7 @@ function lookUpWeather() {
     title.textContent = 'Weather Today';
   
     const temperatureParagraph = document.createElement('p');
-    const temperatureFahrenheit = (parseFloat(weather.temperature) * 9/5) + 32;
+    const temperatureFahrenheit = (parseFloat(weather.temperature) * 9 / 5) + 32;
     temperatureParagraph.textContent = `The temperature today is ${temperatureFahrenheit.toFixed(2)}°F`;
   
     const windParagraph = document.createElement('p');
@@ -72,7 +74,7 @@ function lookUpWeather() {
       const dayText = document.createElement('p');
       dayText.textContent = `Day ${day.day}:`;
       const temperatureText = document.createElement('p');
-      const temperatureFahrenheit = (parseFloat(day.temperature) * 9/5) + 32;
+      const temperatureFahrenheit = (parseFloat(day.temperature) * 9 / 5) + 32;
       temperatureText.textContent = `Temperature: ${temperatureFahrenheit.toFixed(2)}°F`;
       const windText = document.createElement('p');
       const windMph = parseFloat(day.wind) * 0.621371;
@@ -88,8 +90,5 @@ function lookUpWeather() {
   
     card.appendChild(contentDiv);
     card.appendChild(forecastDiv);
-  
-    const weatherContainer = document.querySelector('#weather');
-    weatherContainer.appendChild(card);
-  }
+  };
     

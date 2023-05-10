@@ -10,11 +10,13 @@
 <body>
     <h1>Knuckles' Weather Monitoring</h1>
     <div class="cityForm">
-    <form>
-        <label for="name">City:</label>
-        <input type="text" id="name" name="name">
-        <button type="submit">Let's see the weather!</button>
-    </form>
+    <form id="city-form">
+  <input type="text" placeholder="Enter city name" />
+  <button type="submit">Add City</button>
+</form>
+
+<ul id="weather-container"></ul>
+
     </div>
     <div class="container">
         <ul id="weather" class="cards">

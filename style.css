@@ -11,4 +11,5 @@ body {
     padding: 20px;
     width: auto;
     height: auto;
+    box-sizing: content-box;
 }
