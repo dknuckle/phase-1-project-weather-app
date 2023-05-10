@@ -43,12 +43,14 @@ function lookUpWeather() {
     title.textContent = 'Weather Today';
   
     const temperatureParagraph = document.createElement('p');
-    const temperatureFahrenheit = (weather.temperature * 9/5) + 32;
+    const temperatureFahrenheitNumber = parseInt(weather.temperature);
+    const temperatureFahrenheit = (temperatureFahrenheitNumber * 9/5) + 32;
     temperatureParagraph.textContent = `The temperature today is ${temperatureFahrenheit.toFixed(2)}°F`;
   
     const windParagraph = document.createElement('p');
-    const windMph = weather.wind * 0.621371;
-    windParagraph.textContent = `The wind is currently blowing approximately ${windMph.toFixed(2)} mph and it is ${weather.description}`;
+    const windMphNumber = parseInt(weather.wind)
+    const windMph = windMphNumber * 0.621371;
+    windParagraph.textContent = `The wind is currently blowing approximately ${windMph.toFixed(2)} mp/h and it is ${weather.description}`;
   
     contentDiv.appendChild(title);
     contentDiv.appendChild(temperatureParagraph);
