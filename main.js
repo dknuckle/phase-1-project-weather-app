@@ -51,7 +51,8 @@ function grabWeatherData(city) {
     contentDiv.classList.add('content');
   
     const title = document.createElement('h4');
-    title.textContent = 'Weather Today';
+    const cityName = document.querySelector('input').value;
+    title.textContent = `${cityName}'s Weather Today`;
   
     const temperatureParagraph = document.createElement('p');
     const temperatureFahrenheit = (parseFloat(weather.temperature) * 9 / 5) + 32;
