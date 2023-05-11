@@ -16,10 +16,12 @@ body {
   
   .content {
     /* Styles for the content section */
+    font-family: cursive;
   }
   
   .forecast {
     /* Styles for the forecast section */
+    font-family: cursive;
   }
   
   h1 {
