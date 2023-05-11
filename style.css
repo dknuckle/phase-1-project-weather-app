@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(241, 225, 87);
+    background-color: rgb(78, 252, 78);
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
     display: inline-block; /* Display cards as inline blocks */
     margin: 25px; /* Add some margin between cards */
     border-radius: 25px;
-    background: #16ccb0;
+    background: rgb(254, 165, 180);
     padding: 20px;
     box-sizing: border-box; /* Change box-sizing to border-box */
     width: 300px; /* Set a fixed width for each card */
@@ -41,7 +41,7 @@ body {
     box-sizing: content-box;
     width: 205px;
     border-color: black;
-    background: #16ccb0;
+    background: rgb(254, 165, 180);
   }
 
   input {
