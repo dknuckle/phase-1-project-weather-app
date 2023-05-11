@@ -50,3 +50,8 @@ body {
     border-radius: 25px;
   }
   
+  #welcomeMessage {
+    font-family: cursive;
+    text-align: center;
+  }
+  
