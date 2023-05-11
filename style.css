@@ -7,10 +7,11 @@ body {
     display: inline-block; /* Display cards as inline blocks */
     margin: 25px; /* Add some margin between cards */
     border-radius: 25px;
-    background: #91d7e4;
+    background: #16ccb0;
     padding: 20px;
     box-sizing: border-box; /* Change box-sizing to border-box */
     width: 300px; /* Set a fixed width for each card */
+    border-color: black;
   }
   
   .content {
@@ -25,5 +26,27 @@ body {
     /* Styles for the Title */
     font-family: fantasy;
     text-align: center;
+  }
+
+  .cityForm {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: content-box;
+    width: 205px;
+    border-color: black;
+    background: #16ccb0;
+  }
+
+  input {
+    font-family: cursive;
+    border-radius: 25px;
+  }
+
+  button {
+    font-family: cursive;
+    border-radius: 25px;
   }
   
