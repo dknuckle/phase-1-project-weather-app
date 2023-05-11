@@ -30,17 +30,23 @@ function grabWeatherData(city) {
   
   lookUpWeather();
   
-  const weatherContainer = document.querySelector('#weather');
-  const card = document.createElement('li');
-  card.classList.add('card');
-  weatherContainer.appendChild(card);
-  
   function renderWeatherCard(weather) {
     if (!weather || !weather.temperature || !weather.wind || !weather.description || !weather.forecast || !Array.isArray(weather.forecast)) {
       console.error('Invalid weather data:', weather);
       return;
     }
-  
+
+    // const weatherContainer = document.querySelector('#weather');
+    const card = document.createElement('li');
+    card.classList.add('card');
+
+    const removeButton = document.createElement('button');
+    removeButton.classList.add('remove');
+    removeButton.textContent = 'Remove City';
+    removeButton.addEventListener('click', function() {
+        removeCity(card); // Pass the card element
+      });
+
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('content');
   
@@ -88,7 +94,13 @@ function grabWeatherData(city) {
   
     forecastDiv.appendChild(forecastList);
   
+    card.appendChild(removeButton);
     card.appendChild(contentDiv);
     card.appendChild(forecastDiv);
+    weatherContainer.appendChild(card);
   };
-    
+  
+  function removeCity(card) {
+    card.remove();
+  }
+  

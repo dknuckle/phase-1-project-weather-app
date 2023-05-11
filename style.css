@@ -5,7 +5,7 @@ body {
 .card {
     position: relative; /* Change position to relative */
     display: inline-block; /* Display cards as inline blocks */
-    margin: 10px; /* Add some margin between cards */
+    margin: 25px; /* Add some margin between cards */
     border-radius: 25px;
     background: #91d7e4;
     padding: 20px;
