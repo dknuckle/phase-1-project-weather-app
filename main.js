@@ -44,7 +44,7 @@ function grabWeatherData(city) {
     removeButton.classList.add('remove');
     removeButton.textContent = 'Remove City';
     removeButton.addEventListener('click', function() {
-        removeCity(card); // Pass the card element
+        removeCity(card); // Event listener to remove card
       });
 
     const contentDiv = document.createElement('div');
