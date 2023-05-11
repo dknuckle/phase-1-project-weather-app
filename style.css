@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(241, 225, 87);
 }
 
 .card {
@@ -21,4 +21,9 @@ body {
     /* Styles for the forecast section */
   }
   
+  h1 {
+    /* Styles for the Title */
+    font-family: fantasy;
+    text-align: center;
+  }
   

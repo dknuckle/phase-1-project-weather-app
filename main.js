@@ -36,7 +36,7 @@ function grabWeatherData(city) {
       return;
     }
 
-    // const weatherContainer = document.querySelector('#weather');
+    const weatherContainer = document.querySelector('#weather');
     const card = document.createElement('li');
     card.classList.add('card');
 
