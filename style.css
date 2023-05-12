@@ -68,6 +68,8 @@ button {
   font-family: cursive;
   border-radius: 25px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 #welcomeMessage {
