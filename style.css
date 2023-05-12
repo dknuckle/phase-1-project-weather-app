@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(78, 252, 78);
+    background-image: radial-gradient(circle, rgb(78, 252, 78), rgba(254, 165, 180));
     margin: 0;
     padding: 0;
 }
