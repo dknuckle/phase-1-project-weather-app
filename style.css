@@ -1,96 +1,104 @@
 body {
-    background-image: radial-gradient(circle, rgb(78, 252, 78), rgba(254, 165, 180));
-    margin: 0;
-    padding: 0;
+  background-image: radial-gradient(
+    circle,
+    rgb(78, 252, 78),
+    rgba(254, 165, 180)
+  );
+  margin: 0;
+  padding: 0;
 }
 
 .card {
-    /* Styles for the weather card */
-    position: relative;
-    display: inline-block;
-    margin: 25px;
-    border-radius: 25px;
-    background: rgb(254, 165, 180);
-    padding: 20px;
-    box-sizing: border-box;
-    width: 300px;
-    border-color: black;
-  }
-  
-  .content {
-    /* Styles for the content section */
-    font-family: cursive;
-  }
-  
-  .forecast {
-    /* Styles for the forecast section */
-    font-family: cursive;
-  }
-  
-  h1 {
-    /* Styles for the Title */
-    font-family: fantasy;
-    text-align: center;
-  }
+  /* Styles for the weather card */
+  position: relative;
+  display: inline-block;
+  margin: 25px;
+  border-radius: 25px;
+  background: rgb(254, 165, 180);
+  padding: 20px;
+  box-sizing: border-box;
+  width: 300px;
+  border-color: black;
+}
 
-  .cityForm {
-    /* Styles for the city input form */
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    border-radius: 20px;
-    padding: 15px;
-    box-sizing: content-box;
-    width: 205px;
-    border-color: black;
-    background: rgb(254, 165, 180);
-  }
+.content {
+  /* Styles for the content section */
+  font-family: cursive;
+}
 
-  .cityForm input[type="text"] {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .cityForm button {
-    margin-top: 10px;
-  }
+.forecast {
+  /* Styles for the forecast section */
+  font-family: cursive;
+}
 
-  input {
-    font-family: cursive;
-    border-radius: 25px;
-  }
+h1 {
+  /* Styles for the Title */
+  font-family: fantasy;
+  text-align: center;
+}
 
-  button {
-    font-family: cursive;
-    border-radius: 25px;
-  }
-  
-  #welcomeMessage {
-    font-family: cursive;
-    text-align: center;
-  }
+.cityForm {
+  /* Styles for the city input form */
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: content-box;
+  width: 205px;
+  border-color: black;
+  background: rgb(254, 165, 180);
+}
 
-  .top-image {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    max-height: 50vh;
-  }
-  
-  
-  footer {
-    /* Styles for footer */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 2px;
-    box-sizing: content-box;
-    width: 100%;
-    border-color: black;
-    background-image: radial-gradient(circle, rgba(254, 165, 180), rgb(78, 252, 78));
-  }
+.cityForm input[type="text"] {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cityForm button {
+  margin-top: 10px;
+}
+
+input {
+  font-family: cursive;
+  border-radius: 25px;
+}
+
+button {
+  font-family: cursive;
+  border-radius: 25px;
+}
+
+#welcomeMessage {
+  font-family: cursive;
+  text-align: center;
+}
+
+.top-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+}
+
+footer {
+  /* Styles for footer */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2px;
+  box-sizing: content-box;
+  width: 100%;
+  border-color: black;
+  background-image: radial-gradient(
+    circle,
+    rgba(254, 165, 180),
+    rgb(78, 252, 78)
+  );
+}
