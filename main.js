@@ -10,7 +10,7 @@ function grabWeatherData(city) {
       .then(weatherData => {
         console.log(weatherData); // Log the API response data
         renderWeatherCard(weatherData);
-        return weatherData; // Optional: Return the data for further processing
+        return weatherData;
       })
       .catch(error => {
         // Handle the error
@@ -55,11 +55,11 @@ function grabWeatherData(city) {
     title.textContent = `${cityName}'s Weather Today`;
   
     const temperatureParagraph = document.createElement('p');
-    const temperatureFahrenheit = (parseFloat(weather.temperature) * 9 / 5) + 32;
+    const temperatureFahrenheit = (parseFloat(weather.temperature) * 9 / 5) + 32; // convert celcious to fahrenheit & remove string from data
     temperatureParagraph.textContent = `The temperature today is ${temperatureFahrenheit.toFixed(2)}°F`;
   
     const windParagraph = document.createElement('p');
-    const windMph = parseFloat(weather.wind) * 0.621371;
+    const windMph = parseFloat(weather.wind) * 0.621371; // convert kph to mph & remove string from data
     windParagraph.textContent = `The wind is currently blowing approximately ${windMph.toFixed(2)} mph and it is ${weather.description}`;
   
     contentDiv.appendChild(title);
@@ -76,7 +76,7 @@ function grabWeatherData(city) {
   
     const forecastList = document.createElement('ul');
   
-    weather.forecast.forEach(day => {
+    weather.forecast.forEach(day => { // Loop through array
       const forecastItem = document.createElement('li');
       const dayText = document.createElement('p');
       dayText.textContent = `Day ${day.day}:`;
