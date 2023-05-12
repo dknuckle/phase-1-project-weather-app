@@ -5,14 +5,15 @@ body {
 }
 
 .card {
-    position: relative; /* Change position to relative */
-    display: inline-block; /* Display cards as inline blocks */
-    margin: 25px; /* Add some margin between cards */
+    /* Styles for the weather card */
+    position: relative;
+    display: inline-block;
+    margin: 25px;
     border-radius: 25px;
     background: rgb(254, 165, 180);
     padding: 20px;
-    box-sizing: border-box; /* Change box-sizing to border-box */
-    width: 300px; /* Set a fixed width for each card */
+    box-sizing: border-box;
+    width: 300px;
     border-color: black;
   }
   
@@ -33,6 +34,7 @@ body {
   }
 
   .cityForm {
+    /* Styles for the city input form */
     position: relative;
     display: inline-block;
     margin: 15px;
