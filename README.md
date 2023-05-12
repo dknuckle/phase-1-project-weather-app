@@ -15,3 +15,4 @@ Will allow a user to input a location and be able to view the weather for the lo
 - Image used was a self taken photo of the San Fransico Peaks in Flagstaff, Arizona.
 
 ### License
+[MIT](https://choosealicense.com/licenses/mit/)
