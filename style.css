@@ -38,12 +38,21 @@ body {
     position: relative;
     display: inline-block;
     margin: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px;
     box-sizing: content-box;
     width: 205px;
     border-color: black;
     background: rgb(254, 165, 180);
+  }
+
+  .cityForm input[type="text"] {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .cityForm button {
+    margin-top: 10px;
   }
 
   input {
@@ -69,3 +78,17 @@ body {
     height: 50%;
   }
   
+  footer {
+    /* Styles for footer */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 2px;
+    box-sizing: content-box;
+    width: 100%;
+    border-color: black;
+    background-image: radial-gradient(circle, rgba(254, 165, 180), rgb(78, 252, 78));
+  }
