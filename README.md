@@ -12,5 +12,6 @@ API allows for a decent amount of pulls before it fails and you will need to wai
 
 
 ### Contributions
-image for icon found at -> https://www.pngitem.com/middle/imRTho_transparent-entrevista-clipart-sun-with-rainbow-clipart-hd/
-Image used was a self taken photo of the San Fransico Peaks in Flagstaff, Arizona.
+- Image for icon found at -> https://www.pngitem.com/middle/imRTho_transparent-entrevista-clipart-sun-with-rainbow-clipart-hd/
+
+- Image used was a self taken photo of the San Fransico Peaks in Flagstaff, Arizona.
