@@ -67,6 +67,7 @@ input {
 button {
   font-family: cursive;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 #welcomeMessage {
