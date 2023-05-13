@@ -15,7 +15,15 @@ function grabWeatherData(city) {
     .catch((error) => {
       // Handle the error
       console.error(error);
+      showErrorMessage();
     });
+}
+
+// Function to show error message
+function showErrorMessage() {
+  const errorMessage = document.createElement("div");
+  errorMessage.textContent = "Failed to fetch weather data for City or Town entered. Please try again with a different spelling, an abbreviation, or nearby city."
+  document.body.appendChild(errorMessage);
 }
 
 // event listener for the click to submit
