@@ -21,9 +21,24 @@ function grabWeatherData(city) {
 
 // Function to show error message
 function showErrorMessage() {
+  const errorContainer = document.createElement("div");
+  errorContainer.classList.add("error-container");
+
+  const errorContent = document.createElement("div");
+  errorContent.classList.add("error-content");
+
   const errorMessage = document.createElement("div");
-  errorMessage.textContent = "Failed to fetch weather data for City or Town entered. Please try again with a different spelling, an abbreviation, or nearby city."
-  document.body.appendChild(errorMessage);
+  errorMessage.textContent = "Failed to fetch weather data for City or Town entered. Please try again with a different spelling, an abbreviation, or nearby city.";
+
+  const closeButton = document.createElement("button");
+  closeButton.textContent = "Close";
+  closeButton.addEventListener("click", function () {
+    errorContainer.remove();
+  });
+  errorContent.appendChild(errorMessage);
+  errorContent.appendChild(closeButton);
+  errorContainer.appendChild(errorContent);
+  document.body.appendChild(errorContainer);
 }
 
 // event listener for the click to submit
