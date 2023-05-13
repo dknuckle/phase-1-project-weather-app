@@ -1,4 +1,5 @@
 # Knucklecast
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](/LICENSE)
 ## Dalton Knuckles' phase 1 project
 ### **Weather App**
 
